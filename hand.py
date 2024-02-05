@@ -26,8 +26,7 @@ def extract_landmarks(frame):
                     landmark_data.append(landmark.z)
                 landmarks.extend(landmark_data)
 
-            # Pad with zeros if needed to ensure a total length of 126
-            landmarks += [0.0] * (126 - len(landmarks))
+
 
             landmarks_data.append(landmarks)
             combined_landmarks.extend(landmarks)
